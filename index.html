@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>keyCode変数</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "5-12.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+<div class="code">
+	<p>　　	int x=215;
+	<p>　
+	<p>　　	void setup(){
+	<p>　　	　size(480, 120);　　
+	<p>　　	}
+	<p>　　	
+	<p>　　	void draw(){
+	<p>　　	　if(keyPressed && (key == CODED)){
+	<p>　　	　　if(keyCode==LEFT){
+	<p>　　	　　　x--;
+	<p>　　	　　}else if(keyCode==RIGHT){
+	<p>　　	　　　x++;
+	<p>　　	　　}
+	<p>　　	　}
+	<p>　　	　rect(x, 45, 50, 50);
+	<p>　　	}
+	</div>
+	</div>
+</div>
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>　keyCode関数は、key関数で判別することのできないボタンを判別するときに使う。
+	<p>　主に、（矢印ボタン、Alt、Ctrl、Shift）を使用する際に用いる。
+	<p>　　矢印ボタンは（UP, DOWN, LEFT, RIGHT）
+	<p>　　Altボタンは（ALT）
+	<p>　　Ctrlボタンは（CONTROL）
+	<p>　　Shiftボタンは（SHIFT）
+	<p>　これらはコード化されたボタンと呼ばれ、使用する際に（key==CODED）と条件を付けることで、押されたボタンはコード化されたものか判別する必要がある。
+	<p>　使いかたは例の通りである。
+	<p>　例では、→ボタンを押すと四角形が右に移動し、←に押すと左に移動する仕組みである。
+
+</div>
+</body>
